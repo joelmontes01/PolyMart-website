@@ -608,3 +608,62 @@ html {
         margin-top: 20px;
     }
 }
+
+/* Ajuste adicional para dispositivos móviles */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    header .logo img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text h3 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+
+    .btn-cta {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+
+    .beneficio img {
+        max-width: 80px;
+    }
+
+    .tamaños h2, .colores h2 {
+        font-size: 36px;
+    }
+
+    .tamaño p, .titulo-tamaño, .formulario-contacto p {
+        font-size: 14px;
+    }
+
+    .faq-section h2, .faq-section h3 {
+        font-size: 1.8em;
+    }
+}
+
