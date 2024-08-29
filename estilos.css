@@ -66,9 +66,9 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 100px 80px 100px; /* Reducido el padding superior */
+    padding: 40px 100px 80px 100px;
     background-color: #FFE5DD;
-    margin-top: 20px; /* Si es necesario para ajustar aún más el espacio superior */
+    margin-top: 20px;
 }
 
 .hero-text {
@@ -136,12 +136,15 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    padding: 30px 20px; /* Reducido el padding superior e inferior */
+    padding: 30px 20px;
+    flex-wrap: wrap;
 }
 
 .beneficio {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    margin: 10px;
 }
 
 .beneficio:hover {
@@ -161,20 +164,20 @@ header nav ul li a:hover {
 
 /* Tamaños */
 .tamaños {
-    padding: 30px 20px; /* Reducido el padding superior e inferior */
+    padding: 30px 20px;
     text-align: center;
 }
 
 .tamaños h2 {
-    margin-bottom: 20px; /* Reducido el margen inferior */
+    margin-bottom: 20px;
     color: #EC8309;
-    font-size: 48px; /* Tamaño del título principal */
+    font-size: 48px;
 }
 
 .tamaño {
     display: inline-block;
     text-align: center;
-    margin: 0 20px; /* Reducido el margen entre las imágenes */
+    margin: 0 20px;
 }
 
 .tamaño-chica img, .tamaño-mediana img, .tamaño-grande img {
@@ -188,7 +191,7 @@ header nav ul li a:hover {
 }
 
 .tamaño-mediana {
-    margin: 0 40px; /* Reducido el margen para centrar la imagen mediana */
+    margin: 0 40px;
 }
 
 .tamaño-mediana img {
@@ -208,21 +211,21 @@ header nav ul li a:hover {
 }
 
 .titulo-tamaño {
-    font-size: 18px; /* Tamaño de la letra para el título */
+    font-size: 18px;
     font-weight: bold;
     color: #000000;
-    margin-top: 10px; /* Espacio entre la imagen y el título */
-    margin-bottom: 5px; /* Espacio entre el título y las dimensiones */
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 /* Colores */
 .colores {
-    padding: 30px 20px; /* Reducido el padding superior e inferior */
+    padding: 30px 20px;
     text-align: center;
 }
 
 .colores h2 {
-    margin-bottom: 20px; /* Reducido el margen inferior */
+    margin-bottom: 20px;
     color: #294757;
     font-size: 48px;
 }
@@ -245,7 +248,9 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 40px 0; /* Reducido el margen superior e inferior */
+    margin: 40px 0;
+    flex-direction: column;
+    text-align: center;
 }
 
 .contenido-quienes-somos {
@@ -255,12 +260,13 @@ header nav ul li a:hover {
     width: 80%;
     max-width: 1200px;
     box-sizing: border-box;
-    position: relative;
+    flex-wrap: wrap;
 }
 
 .imagen-quienes-somos {
     flex: 1;
     margin-right: 20px;
+    text-align: center;
 }
 
 .imagen-quienes-somos img {
@@ -292,8 +298,9 @@ header nav ul li a:hover {
 .logo-quienes-somos {
     position: absolute;
     bottom: -40px;
-    left: 30%;
+    left: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 
 .logo-quienes-somos img {
@@ -310,6 +317,7 @@ header nav ul li a:hover {
     background-color: #FFE5DD;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
 }
 
 .contacto-info {
@@ -318,6 +326,8 @@ header nav ul li a:hover {
     color: white;
     padding: 30px;
     border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
 }
 
 .formulario-contacto {
@@ -327,6 +337,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 400px;
 }
 
 .formulario-contacto form {
@@ -342,7 +353,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid #7A868B;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .formulario-contacto p {
@@ -372,7 +383,7 @@ header nav ul li a:hover {
 
 .social-media {
     margin-top: 15px;
-    text-align: left; /* Alineación a la izquierda */
+    text-align: center;
 }
 
 .social-media img {
@@ -386,19 +397,6 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-
-/* Imágenes */
-.imagenes {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 20px; /* Reducido el padding superior e inferior */
-}
-
-.imagenes img {
-    max-width: 30%;
-    height: auto;
-}
-
 /* Footer */
 footer {
     background-color: #D9D9D9;
@@ -409,11 +407,11 @@ footer {
     flex-wrap: wrap;
     box-sizing: border-box;
     position: relative;
+    text-align: center;
 }
 
 .footer-info {
     flex: 1;
-    text-align: left;
 }
 
 .footer-info img {
@@ -427,6 +425,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-nav ul {
@@ -470,7 +469,7 @@ footer {
 
 /* Preguntas Frecuentes */
 .faq-section {
-    padding: 40px 20px; /* Reducido el padding superior e inferior */
+    padding: 40px 20px;
     background-color: #FFE5DD;
     text-align: center;
 }
@@ -484,7 +483,7 @@ footer {
 .faq-section h3 {
     font-size: 1.5em;
     color: #7A868B;
-    margin-bottom: 20px; /* Reducido el margen inferior */
+    margin-bottom: 20px;
 }
 
 .faq {
@@ -498,7 +497,7 @@ footer {
     color: white;
     padding: 15px;
     width: 100%;
-    text-align: center; /* Centrar el texto de la pregunta */
+    text-align: center;
     font-size: 1.2em;
     border: none;
     cursor: pointer;
@@ -506,7 +505,7 @@ footer {
     border-radius: 5px;
     outline: none;
     display: flex;
-    justify-content: center; /* Centrar el contenido dentro de la pregunta */
+    justify-content: center;
     align-items: center;
 }
 
@@ -529,7 +528,7 @@ footer {
     background-color: #FFE5DD;
     padding: 15px;
     display: none;
-    text-align: center; /* Centrar el texto de la respuesta */
+    text-align: center;
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 1em;
@@ -546,10 +545,29 @@ html {
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .hero-text, .hero-image {
         max-width: 100%;
+        margin-right: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text h3 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+
+    .btn-cta {
+        font-size: 1.2em;
+        padding: 15px 30px;
     }
 
     .beneficios {
@@ -557,13 +575,55 @@ html {
         align-items: center;
     }
 
-    .tamaño {
-        width: 100%;
-        margin-bottom: 20px;
+    .beneficio {
+        max-width: 90%;
+        margin: 10px 0;
     }
 
-    .color {
-        margin: 10px;
+    .beneficio img {
+        max-width: 80px;
+    }
+
+    .tamaños h2, .colores h2 {
+        font-size: 36px;
+    }
+
+    .tamaño p, .titulo-tamaño, .formulario-contacto p {
+        font-size: 14px;
+    }
+
+    .faq-section h2, .faq-section h3 {
+        font-size: 1.8em;
+    }
+
+    .faq-question {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .faq-answer {
+        font-size: 0.9em;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    header .logo img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .quienes-somos {
@@ -578,10 +638,11 @@ html {
 
     .contactanos {
         flex-direction: column;
+        align-items: center;
     }
 
-    .contacto-info {
-        margin-right: 0;
+    .contacto-info, .formulario-contacto {
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
@@ -609,61 +670,4 @@ html {
     }
 }
 
-/* Ajuste adicional para dispositivos móviles */
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        padding: 10px;
-        height: auto;
-    }
-
-    header .logo img {
-        height: 50px;
-        margin-bottom: 10px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .hero-text h1 {
-        font-size: 2.5em;
-    }
-
-    .hero-text h3 {
-        font-size: 1.5em;
-    }
-
-    .hero-text p {
-        font-size: 1.2em;
-    }
-
-    .btn-cta {
-        font-size: 1.2em;
-        padding: 15px 30px;
-    }
-
-    .beneficio img {
-        max-width: 80px;
-    }
-
-    .tamaños h2, .colores h2 {
-        font-size: 36px;
-    }
-
-    .tamaño p, .titulo-tamaño, .formulario-contacto p {
-        font-size: 14px;
-    }
-
-    .faq-section h2, .faq-section h3 {
-        font-size: 1.8em;
-    }
-}
 
