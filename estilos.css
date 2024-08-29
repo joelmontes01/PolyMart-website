@@ -61,6 +61,46 @@ header nav ul li a:hover {
     color: #FFFFFF;
 }
 
+/* Estilos para el menú móvil */
+header .hamburger {
+    display: none; /* Oculto por defecto, se muestra solo en móviles */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    header .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav {
+        display: none; /* Ocultar el menú por defecto en móviles */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .hamburger {
+        display: block; /* Mostrar el icono "hamburguesa" en móviles */
+        cursor: pointer;
+    }
+
+    header nav.open {
+        display: flex; /* Mostrar el menú cuando se hace clic en el icono "hamburguesa" */
+    }
+
+    .hero {
+        margin-top: 60px; /* Asegurar que el contenido no quede cubierto por el header */
+    }
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -669,5 +709,6 @@ html {
         margin-top: 20px;
     }
 }
+
 
 
