@@ -53,6 +53,7 @@
     <header>
         <div class="logo">
             <a href="#top"><img src="assets/images/polymart_sinfondo_1.png" alt="PolyMart Logo"></a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </div>
         <nav>
             <ul>
@@ -267,7 +268,15 @@
                 faqAnswer.style.display = faqItem.classList.contains('active') ? 'block' : 'none';
             });
         });
-    </script> 
+    </script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('header nav');
+            var burger = document.querySelector('.hamburger');
+            nav.classList.toggle('open');
+            burger.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>
