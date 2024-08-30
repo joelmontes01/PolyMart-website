@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    height: 60px;
+    height: 60px; /* Altura original para desktop */
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,16 +32,16 @@ header {
 }
 
 header .logo {
-    flex: 1; /* Deja que el logo ocupe espacio a la izquierda */
+    flex: 1;
 }
 
 header .logo img {
-    height: 50px; /* Ajusta el tamaño del logo */
+    height: 50px; /* Tamaño del logo para desktop */
 }
 
 header nav {
-    flex: 2; /* Hace que el nav ocupe el doble de espacio */
-    text-align: center; /* Centra el contenido del nav */
+    flex: 2;
+    text-align: center;
 }
 
 header nav ul {
@@ -69,35 +69,19 @@ header nav ul li a:hover {
     color: #FFFFFF;
 }
 
-header .menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 /* Responsividad para móviles */
 @media (max-width: 768px) {
     header {
-        flex-direction: row; /* Asegura que los elementos estén en una fila */
+        height: 50px; /* Reduce la altura del header en móviles */
+        padding: 2px 15px; /* Reduce el padding superior e inferior para hacer el recuadro más delgado */
     }
 
     header .logo img {
-        height: 40px;
+        height: 40px; /* Ajusta el tamaño del logo para móviles */
     }
 
     header nav {
-        display: none; /* Ocultar menú en móviles */
-    }
-
-    header .menu-toggle {
-        display: block;
-    }
-}
-
-/* Ocultar el menú de hamburguesa en escritorio */
-@media (min-width: 769px) {
-    header .menu-toggle {
-        display: none;
+        display: none; /* Ocultar los botones del header en móviles */
     }
 }
 
