@@ -426,6 +426,15 @@ header nav ul li a:hover {
     text-align: left; /* Alinea el texto hacia la izquierda */
 }
 
+.contacto-info a {
+    color: #FFDD00; /* Cambia el color del enlace para que sea visible */
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline; /* Agrega un subrayado al pasar el cursor */
+}
+
 .formulario-contacto {
     flex: 1; /* Aumenta el tamaño del cuadro blanco */
     background-color: white;
@@ -501,13 +510,17 @@ header nav ul li a:hover {
     }
 
     .social-media {
-    text-align: center; /* Alinea el icono de redes sociales a la izquierda */
+        text-align: center; /* Alinea el icono de redes sociales al centro */
     }
 
     .contacto-info, .formulario-contacto {
         max-width: 100%;
         text-align: center; /* Restablece la alineación central en móviles */
         align-items: center;
+    }
+
+    .contacto-info a {
+        color: #FFDD00; /* Asegúrate de que el enlace sea visible en móviles */
     }
 
     .formulario-contacto form {
@@ -518,6 +531,7 @@ header nav ul li a:hover {
         text-align: center; /* Restablece la alineación del texto al centro en móviles */
     }
 }
+
 
 
 /* Footer */
