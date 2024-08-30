@@ -160,6 +160,7 @@ header nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        margin-top: 30px;
     }
 
     .hero-text, .hero-image {
@@ -185,9 +186,9 @@ header nav ul li a:hover {
     }
 
     .hero-image img {
-        max-width: 150px; /* Reduce el tamaño de la imagen en móvil */
+        max-width: 200px; /* Reduce el tamaño de la imagen en móvil */
         border-radius: 25px; /* Aplica esquinas redondeadas */
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 
