@@ -16,6 +16,24 @@ h1, h2, h3 {
     color: #EC8309;
 }
 
+/* General Styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE5DD;
+    color: #294757;
+}
+
+a {
+    text-decoration: none;
+    color: #294757;
+}
+
+h1, h2, h3 {
+    color: #EC8309;
+}
+
 /* Header */
 header {
     background-color: #D9D9D9;
@@ -23,7 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    height: 50px; /* Reduce the height */
+    height: 50px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,7 +50,7 @@ header {
 }
 
 header .logo img {
-    height: 40px; /* Reduce the logo size */
+    height: 60px; /* Height restored for desktop */
     margin-right: 15px;
 }
 
