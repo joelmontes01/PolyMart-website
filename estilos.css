@@ -413,34 +413,32 @@ header nav ul li a:hover {
     padding: 60px 20px;
     background-color: #FFE5DD;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
 }
 
 .contacto-info {
-    flex: 1;
+    flex: 1.2; /* Aumenta el tamaño del cuadro azul */
     background-color: #294757;
     color: white;
     padding: 30px;
     border-radius: 5px;
-    text-align: center;
-    max-width: 400px;
+    text-align: left; /* Alinea el texto hacia la izquierda */
 }
 
 .formulario-contacto {
-    flex: 1;
+    flex: 1.8; /* Aumenta el tamaño del cuadro blanco */
     background-color: white;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
+    text-align: left; /* Alinea el texto hacia la izquierda */
 }
 
 .formulario-contacto form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Alinea los elementos del formulario a la izquierda */
 }
 
 .formulario-contacto input,
@@ -457,7 +455,7 @@ header nav ul li a:hover {
     font-size: 1.1em;
     color: #294757;
     margin-top: 10px;
-    text-align: center;
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .formulario-contacto .btn-cta {
@@ -480,7 +478,7 @@ header nav ul li a:hover {
 
 .social-media {
     margin-top: 15px;
-    text-align: left;
+    text-align: left; /* Alinea el icono de redes sociales a la izquierda */
 }
 
 .social-media img {
@@ -493,6 +491,30 @@ header nav ul li a:hover {
 .social-media img:hover {
     transform: scale(1.1);
 }
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .contactanos {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .contacto-info, .formulario-contacto {
+        max-width: 100%;
+        text-align: center; /* Restablece la alineación central en móviles */
+        align-items: center;
+    }
+
+    .formulario-contacto form {
+        align-items: center; /* Restablece la alineación del formulario al centro en móviles */
+    }
+
+    .formulario-contacto p {
+        text-align: center; /* Restablece la alineación del texto al centro en móviles */
+    }
+}
+
 
 /* Footer */
 footer {
