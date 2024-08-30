@@ -540,11 +540,11 @@ footer {
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: left;
+    align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-info {
