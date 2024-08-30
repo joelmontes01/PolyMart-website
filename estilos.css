@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px; /* Aumenta el padding para dar más espacio */
+    padding: 5px 15px;
     height: 60px;
     position: fixed;
     top: 0;
@@ -32,8 +32,7 @@ header {
 }
 
 header .logo {
-    display: flex;
-    align-items: center;
+    flex: 1; /* Deja que el logo ocupe espacio a la izquierda */
 }
 
 header .logo img {
@@ -41,16 +40,15 @@ header .logo img {
 }
 
 header nav {
-    flex-grow: 1;
-    text-align: right; /* Alinea el contenido del nav a la derecha */
+    flex: 2; /* Hace que el nav ocupe el doble de espacio */
+    text-align: center; /* Centra el contenido del nav */
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
 }
 
 header nav ul li {
@@ -77,18 +75,19 @@ header .menu-toggle {
     cursor: pointer;
 }
 
-header .menu-toggle.open {
-    display: block;
-}
-
 /* Responsividad para móviles */
 @media (max-width: 768px) {
     header {
-        flex-direction: row; /* Cambia a row para que el logo y el toggle estén en la misma línea */
+        flex-direction: row; /* Asegura que los elementos estén en una fila */
     }
 
     header .logo img {
         height: 40px;
+    }
+
+    header nav {
+        flex: 1;
+        text-align: center;
     }
 
     header nav ul {
@@ -106,6 +105,12 @@ header .menu-toggle.open {
     }
 }
 
+/* Ocultar el menú de hamburguesa en escritorio */
+@media (min-width: 769px) {
+    header .menu-toggle {
+        display: none;
+    }
+}
 
 /* Hero Section */
 .hero {
