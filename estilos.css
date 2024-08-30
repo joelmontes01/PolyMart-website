@@ -85,6 +85,13 @@ header nav ul li a:hover {
     }
 }
 
+/* Mostrar botones en desktop */
+@media (min-width: 769px) {
+    header nav {
+        display: flex; /* Mostrar botones del header en desktop */
+    }
+}
+
 /* Hero Section */
 .hero {
     display: flex;
