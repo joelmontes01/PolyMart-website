@@ -414,11 +414,11 @@ header nav ul li a:hover {
     background-color: #FFE5DD;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .contacto-info {
-    flex: 1.2; /* Aumenta el tamaño del cuadro azul */
+    flex: 1; /* Aumenta el tamaño del cuadro azul */
     background-color: #294757;
     color: white;
     padding: 30px;
@@ -427,7 +427,7 @@ header nav ul li a:hover {
 }
 
 .formulario-contacto {
-    flex: 1.8; /* Aumenta el tamaño del cuadro blanco */
+    flex: 1; /* Aumenta el tamaño del cuadro blanco */
     background-color: white;
     padding: 30px;
     border-radius: 5px;
