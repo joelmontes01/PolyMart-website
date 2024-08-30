@@ -500,6 +500,10 @@ header nav ul li a:hover {
         padding: 30px 20px;
     }
 
+    .social-media {
+    text-align: center; /* Alinea el icono de redes sociales a la izquierda */
+    }
+
     .contacto-info, .formulario-contacto {
         max-width: 100%;
         text-align: center; /* Restablece la alineación central en móviles */
