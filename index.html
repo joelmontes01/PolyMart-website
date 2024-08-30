@@ -50,22 +50,22 @@
 
 <body>
     <!-- Header -->
-<header>
-    <div class="logo">
-        <a href="#top"><img src="assets/images/polymart_sinfondo_1.png" alt="PolyMart Logo"></a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#top">Inicio</a></li>
-            <li><a href="#quienes-somos">Nosotros</a></li>
-            <li><a href="#contactanos">Cotiza</a></li>
-            <li><a href="#faq">Preguntas Frecuentes</a></li>
-        </ul>
-    </nav>
-    <div class="menu-toggle">
-        <span>&#9776;</span>
-    </div>
-</header>
+    <header>
+        <div class="logo">
+            <a href="#top"><img src="assets/images/polymart_sinfondo_1.png" alt="PolyMart Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#top">Inicio</a></li>
+                <li><a href="#quienes-somos">Nosotros</a></li>
+                <li><a href="#contactanos">Cotiza</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span>&#9776;</span>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section id="top" class="hero">
@@ -213,8 +213,6 @@
         </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer>
         <div class="footer-info">
@@ -238,6 +236,8 @@
         </div>
         <div class="footer-orange-bar"></div> <!-- Franja naranja -->
     </footer>
+
+    <!-- Smooth Scroll for Anchor Links -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -249,14 +249,15 @@
             });
         });
     </script>
-    <!-- JavaScript para el efecto de desplegable (accordion) -->
+
+    <!-- JavaScript for Accordion Effect -->
     <script>
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const faqItem = button.parentElement;
                 const faqAnswer = faqItem.querySelector('.faq-answer');
 
-                // Cierra todas las respuestas abiertas
+                // Close all open answers
                 document.querySelectorAll('.faq-item').forEach(item => {
                     const answer = item.querySelector('.faq-answer');
                     if (item !== faqItem) {
@@ -265,12 +266,14 @@
                     }
                 });
 
-                // Alterna la respuesta actual
+                // Toggle the current answer
                 faqItem.classList.toggle('active');
                 faqAnswer.style.display = faqItem.classList.contains('active') ? 'block' : 'none';
             });
         });
     </script>
+
+    <!-- JavaScript for Toggle Menu -->
     <script>
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             this.classList.toggle('active');
@@ -278,7 +281,7 @@
             nav.classList.toggle('open');
         });
     
-        // Cerrar el menú al hacer clic en una opción
+        // Close the menu when an option is clicked
         document.querySelectorAll('header nav ul li a').forEach(function(link) {
             link.addEventListener('click', function() {
                 document.querySelector('.menu-toggle').classList.remove('active');
@@ -289,3 +292,4 @@
 </body>
 
 </html>
+
