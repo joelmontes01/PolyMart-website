@@ -20,10 +20,10 @@ h1, h2, h3 {
 header {
     background-color: #D9D9D9;
     display: flex;
-    justify-content: center; /* Centra el logo horizontalmente */
-    align-items: center; /* Centra el logo verticalmente */
-    padding: 5px 0; /* Reduce el padding superior e inferior para hacer el recuadro más delgado */
-    height: 50px; /* Ajusta la altura del header */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,15 +32,47 @@ header {
 }
 
 header .logo {
-    flex: none; /* Asegura que el logo no ocupe más espacio del necesario */
+    flex: 1; /* Deja que el logo ocupe espacio a la izquierda */
 }
 
 header .logo img {
-    height: 40px; /* Mantiene el tamaño del logo */
+    height: 50px; /* Ajusta el tamaño del logo */
 }
 
 header nav {
-    display: none; /* Ocultar menú en móviles y escritorio, ya que no lo quieres visible */
+    flex: 2; /* Hace que el nav ocupe el doble de espacio */
+    text-align: center; /* Centra el contenido del nav */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    font-weight: 600;
+    color: #294757;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+header nav ul li a:hover {
+    background-color: #EC8309;
+    color: #FFFFFF;
+}
+
+header .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Responsividad para móviles */
@@ -50,25 +82,24 @@ header nav {
     }
 
     header .logo img {
-        height: 40px; /* Ajusta el tamaño del logo para móviles */
+        height: 40px;
     }
 
     header nav {
-        display: none; /* Asegura que el menú siga oculto en móviles */
+        display: none; /* Ocultar menú en móviles */
     }
 
     header .menu-toggle {
-        display: none; /* Asegura que el icono de menú también esté oculto */
+        display: block;
     }
 }
 
 /* Ocultar el menú de hamburguesa en escritorio */
 @media (min-width: 769px) {
     header .menu-toggle {
-        display: none; /* Asegura que el icono de menú esté oculto en escritorio */
+        display: none;
     }
 }
-
 
 /* Hero Section */
 .hero {
