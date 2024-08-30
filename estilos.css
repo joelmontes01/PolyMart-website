@@ -333,6 +333,41 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .quienes-somos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto-quienes-somos {
+        order: 2; /* Coloca el texto en segundo lugar */
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .imagen-quienes-somos {
+        order: 3; /* Coloca la imagen en tercer lugar */
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .logo-quienes-somos {
+        position: relative;
+        order: 1; /* Coloca el logo en primer lugar */
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 20px;
+    }
+}
+
+
 /* Contáctanos */
 .contactanos {
     display: flex;
