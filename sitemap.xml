@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://polymarts.com/</loc>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/dnq_np_2_x_11440_mlm_20043739346022014_f_1.png</image:loc>
+      <image:caption>Charolas de Plástico elegante con alimentos en restaurante</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/dnq_np_2_x_11410_mlm_20043740195022014_f_1.png</image:loc>
+      <image:caption>Charola de plástico en restaurante elegante con alimentos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/image_2.png</image:loc>
+      <image:caption>Presentación elegantes para restaurantes y cafeterías</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/image_3.png</image:loc>
+      <image:caption>Transporte facil y seguro de alimentos</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/image_5.png</image:loc>
+      <image:caption>Charolas resistentes para uso rudo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/charola_mediana_removebg_preview_2.png</image:loc>
+      <image:caption>Charola rectangular de tamaño mediano</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/polymart_sinfondo_1.png</image:loc>
+      <image:caption>Logo de PolyMart</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polymarts.com/assets/images/polymart_blanco_1.png</image:loc>
+      <image:caption>Logo blanco de PolyMart</image:caption>
+    </image:image>
+  </url>
+</urlset>
