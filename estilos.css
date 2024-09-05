@@ -429,6 +429,10 @@ header nav ul li a:hover {
     text-align: left; /* Alinea el texto hacia la izquierda */
 }
 
+.contacto-info h2 {
+    color: #EC8309; /* Color naranja */
+}
+
 .contacto-info a {
     color: #FFDD00; /* Cambia el color del enlace para que sea visible */
     text-decoration: none;
