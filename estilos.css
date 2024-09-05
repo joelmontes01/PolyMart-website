@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    height: 50px; /* Reducir la altura del header */
+    height: 40px; /* Reducir la altura del header */
     position: fixed;
     top: 0;
     width: 100%;
@@ -92,7 +92,7 @@ header nav ul li a:hover {
     justify-content: center;
     padding: 40px 100px 80px 100px;
     background-color: #e8e9eb;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 .hero-text {
