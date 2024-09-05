@@ -812,3 +812,56 @@ html {
         margin-top: 20px;
     }
 }
+
+/* Estilos para la página de agradecimiento */
+.agradecimiento {
+    text-align: center;
+    padding: 50px 20px; /* Reduce el padding superior e inferior */
+    background-color: #F4F5F7; /* Fondo más claro y profesional */
+    margin-top: 5px; /* Mueve todo el contenido más arriba */
+}
+
+.agradecimiento-imagen {
+    max-width: 200px; /* Tamaño más pequeño de la imagen */
+    margin-bottom: 10px; /* Reduce el espacio debajo de la imagen */
+}
+
+.agradecimiento h1 {
+    color: #1C1F23; /* Color oscuro para un toque formal */
+    font-size: 36px; /* Reduce el tamaño del título */
+    margin-bottom: 10px; /* Reduce el espacio debajo del título */
+}
+
+.agradecimiento p {
+    color: #555555; /* Gris intermedio para el texto */
+    font-size: 18px;
+    margin-bottom: 30px; /* Reduce el espacio entre los párrafos */
+}
+
+.agradecimiento .cta-btn {
+    background-color: #EC8309; /* Botón naranja vibrante */
+    color: white;
+    padding: 10px 20px; /* Botón ligeramente más pequeño */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    border: none; /* Elimina bordes del botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.agradecimiento .cta-btn:hover {
+    background-color: #c66d2d; /* Efecto hover más oscuro */
+}
+
+/* Ajustes para header en la página de agradecimiento */
+header {
+    background-color: #2A3A4F; /* Azul oscuro profesional */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+header img {
+    max-height: 60px; /* Reduce el tamaño del logo del header */
+}
