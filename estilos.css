@@ -816,52 +816,105 @@ html {
 /* Estilos para la página de agradecimiento */
 .agradecimiento {
     text-align: center;
-    padding: 50px 20px; /* Reduce el padding superior e inferior */
-    background-color: #F4F5F7; /* Fondo más claro y profesional */
-    margin-top: 5px; /* Mueve todo el contenido más arriba */
+    padding: 50px 20px;
+    background-color: #F4F5F7;
+    margin-top: 5px;
 }
 
 .agradecimiento-imagen {
-    max-width: 200px; /* Tamaño más pequeño de la imagen */
-    margin-bottom: 10px; /* Reduce el espacio debajo de la imagen */
+    max-width: 200px;
+    margin-bottom: 10px;
 }
 
 .agradecimiento h1 {
-    color: #1C1F23; /* Color oscuro para un toque formal */
-    font-size: 36px; /* Reduce el tamaño del título */
-    margin-bottom: 10px; /* Reduce el espacio debajo del título */
+    color: #1C1F23;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .agradecimiento p {
-    color: #555555; /* Gris intermedio para el texto */
+    color: #555555;
     font-size: 18px;
-    margin-bottom: 30px; /* Reduce el espacio entre los párrafos */
+    margin-bottom: 30px;
 }
 
 .agradecimiento .cta-btn {
-    background-color: #EC8309; /* Botón naranja vibrante */
+    background-color: #EC8309;
     color: white;
-    padding: 10px 20px; /* Botón ligeramente más pequeño */
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 50px;
-    border: none; /* Elimina bordes del botón */
-    transition: background-color 0.3s ease; /* Transición suave */
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .agradecimiento .cta-btn:hover {
-    background-color: #c66d2d; /* Efecto hover más oscuro */
+    background-color: #c66d2d;
 }
 
 /* Ajustes para header en la página de agradecimiento */
 header {
-    background-color: #2A3A4F; /* Azul oscuro profesional */
+    background-color: #2A3A4F;
     text-align: center;
     padding: 10px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header img {
-    max-height: 60px; /* Reduce el tamaño del logo del header */
+    max-height: 60px;
 }
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    .agradecimiento {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .agradecimiento-imagen {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .agradecimiento h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .agradecimiento p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .agradecimiento .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer img {
+        max-width: 80px;
+    }
+}
+
