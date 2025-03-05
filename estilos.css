@@ -539,8 +539,6 @@ header nav ul li a:hover {
     }
 }
 
-
-
 /* Footer */
 footer {
     background-color: #D9D9D9;
@@ -817,6 +815,35 @@ html {
         margin-top: 20px;
     }
 }
+
+/* Ajuste en móviles para reorganizar las columnas del footer */
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info {
+        order: 1; /* Teléfono, email y ubicación primero */
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-nav {
+        order: 2; /* Índice de navegación en la segunda fila */
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-thanks {
+        order: 3; /* Texto de agradecimiento al final */
+        width: 100%;
+    }
+}
+
 
 /* Estilos para la página de agradecimiento */
 .agradecimiento {
